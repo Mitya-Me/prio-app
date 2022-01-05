@@ -1,0 +1,16 @@
+.star {
+}
+
+.filled {
+	fill: var(--primary);
+	transition: var(--trans);
+}
+
+.editable {
+	cursor: pointer
+}
+
+.wrapper {
+	cursor: pointer;
+}
+
