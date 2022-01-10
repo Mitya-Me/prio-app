@@ -4,12 +4,11 @@ import { withLayout } from '../../layout/Layout';
 import axios from 'axios';
 import { MenuItem } from '../../interfaces/menu.interface';
 import { TopPageModel } from '../../interfaces/page.interface';
-import { ParsedUrlQuery } from 'node:querystring';
 import { ProductModel } from '../../interfaces/product.interface';
+import { ParsedUrlQuery } from 'querystring';
 
 
 const firstCategory = 0;
-
 function Course({ menu, page, products }: CourseProps): JSX.Element {
     return (
         <>
