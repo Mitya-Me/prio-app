@@ -3,14 +3,14 @@
 
 .filled {
 	fill: var(--primary);
+
 	transition: var(--trans);
 }
 
 .editable {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .wrapper {
 	cursor: pointer;
 }
-
