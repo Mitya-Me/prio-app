@@ -1,4 +1,4 @@
-import { Advantages, Card, Htag, Tag } from "../../components";
+import { Advantages, Card, Htag, Ptag, Tag } from "../../components";
 import { TopPageComponentProps } from "./TopPageComponent.props";
 import styles from "./TopPageComponent.module.css";
 import { TopLevelCategory } from '../../interfaces/page.interface';
@@ -34,6 +34,9 @@ export const TopPageComponent = ({
                 <Htag tag='h2'> Преимущества </Htag>
                 <Advantages advantages={page.advantages}/>
             </>}
+            {page.seoText && <Ptag> {page.seoText} </Ptag>}
+            <Htag tag='h2'> Получаемые нвыки </Htag>
+            {page.tags.map(t => <Tag key={t} color='primary'> {t}</Tag>)}
         </div>
     );
 };
