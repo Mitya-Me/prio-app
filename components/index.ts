@@ -2,6 +2,7 @@ export * from './Htag/Htag'
 export * from './Ptag/Ptag'
 
 export * from './Button/Button'
+export * from './Input/Input'
 export * from './Tag/Tag'
 
 export * from './Rating/Rating'

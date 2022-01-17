@@ -5,6 +5,7 @@ import { Button, Htag, Ptag, Tag } from "../components";
 import { Rating } from '../components/Rating/Rating';
 import { MenuItem } from "../interfaces/menu.interface";
 import { withLayout } from "../layout/Layout";
+import { Input } from './../components/Input/Input';
 
 function Home({menu}: HomeProps): JSX.Element {
     const [rating, setRating] = useState<number>(4);
@@ -38,7 +39,7 @@ function Home({menu}: HomeProps): JSX.Element {
             </Tag>
             <Tag color='green'>small</Tag>
             <Rating rating={rating} isEditable setRating={setRating} />
-            
+            <Input placeholder="test words"/>
         </>
     );
 }
