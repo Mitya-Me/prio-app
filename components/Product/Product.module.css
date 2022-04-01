@@ -141,3 +141,20 @@
 .characteristicsDots {
 	border-bottom: 1px dashed var(--gray-light);
 }
+
+@media screen and (max-width: 1320px) {
+	.product {
+		grid-template-columns: 
+		70px 30px auto 40px auto 40px 1fr;
+		grid-template-areas:
+		"logo . title title title title title"
+		"logo . tags tags tags tags tags"
+		"price price price . credit . rating"
+		"priceTitle priceTitle priceTitle . creditTitle . rateTitle"
+		"hr hr hr hr hr hr hr"
+		"description description description description description description description"
+		"feature feature feature feature feature feature feature"
+		"advBlock advBlock advBlock advBlock advBlock advBlock advBlock"
+		;
+	}
+}
