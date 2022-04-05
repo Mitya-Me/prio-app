@@ -24,7 +24,7 @@
 
 .error {
 	border: 2px solid var(--red);
-	background-color: rgb(255, 244, 244);
+	background-color: #fff4f4;
 }
 
 .textareaWrapper {
