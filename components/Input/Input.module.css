@@ -20,3 +20,20 @@
 	font-size: 16px;
 	line-height: 22px;
 }
+
+.error {
+	border: 2px solid var(--red);
+	background-color: rgb(255, 244, 244);
+}
+
+.inputWrapper {
+	position: relative;
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -20px;
+	font-size: 12px;
+	left: 2px;
+	color: var(--red);
+}
