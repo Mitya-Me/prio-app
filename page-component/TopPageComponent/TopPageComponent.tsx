@@ -7,6 +7,7 @@ import { Sort } from './../../components/Sort/Sort';
 import { SortEnum } from '../../components/Sort/Sort.props';
 import { useReducer } from "react";
 import { sortReducer } from "./sort.reducer";
+import { useEffect } from "react";
 
 export const TopPageComponent = ({
     page,
@@ -20,6 +21,10 @@ export const TopPageComponent = ({
     const setSort = (sort: SortEnum) => { 
         dispatchSort({ type: sort });
     }
+
+    useEffect(() => { 
+        dispatchSort({type: 'reset', initialState: products})
+    }, [products])
 
 
     return (
