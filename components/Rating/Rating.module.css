@@ -14,3 +14,19 @@
 .wrapper {
 	cursor: pointer;
 }
+
+.ratingWrapper {
+	position: relative;
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -20px;
+	font-size: 12px;
+	left: 2px;
+	color: var(--red);
+}
+
+.error svg {
+	stroke: var(--red); 
+}
