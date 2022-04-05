@@ -243,8 +243,6 @@
 	}
 }
 
-
-
 @media screen and (max-width: 640px) {
 	.product {
 		grid-template-columns: 70px 30px 1fr;

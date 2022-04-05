@@ -9,11 +9,13 @@ import { Tag } from "../Tag/Tag";
 import { Button } from "../Button/Button";
 import { declOfNum, priceRu } from "../../helpers/helpers";
 import { Divider } from '../Divider/Divider';
+import { Review } from '../Review/Review'
 import Image from 'next/image'
 
 export const Product = ({ product, className, ...props }: ProductProps): JSX.Element => { 
 	const [isReviewOpened, setIsReviewOpened ] = useState<boolean>(false)
 
+	console.log(product.reviews)
 
 	return (
 		<>
@@ -68,7 +70,7 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
 				</div>
 				<Divider className={cn(styles.hr, styles.hr2)} />
 				<div className={styles.actions}>
-					<Button appearance='primary'>Узнать пожробнее</Button>
+					<Button appearance='primary'>Узнать подробнее</Button>
 					<Button
 						onClick={() => setIsReviewOpened(!isReviewOpened)}
 						appearance='ghost'
@@ -82,7 +84,9 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
 				[styles.opened]: isReviewOpened,
 				[styles.closed]: !isReviewOpened
 			})}>
-				asdsd
+				{product.reviews.map(r => (
+					<Review key={r._id} review={r}/>
+				)) }
 			</Card>
 		</>
 	)
