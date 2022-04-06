@@ -1,6 +1,6 @@
 .textarea {
-	padding: 7px 15px;
 	width: 100%;
+	padding: 7px 15px;
 
 	color: var(--black);
 	border: none;
@@ -24,7 +24,7 @@
 
 .error {
 	border: 2px solid var(--red);
-	background-color: #fff4f4;
+	background-color: #FFF4F4;
 }
 
 .textareaWrapper {
@@ -34,7 +34,9 @@
 .errorMessage {
 	position: absolute;
 	bottom: -15px;
-	font-size: 12px;
 	left: 2px;
+
 	color: var(--red);
+
+	font-size: 12px;
 }

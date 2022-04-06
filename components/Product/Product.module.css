@@ -149,6 +149,7 @@
 
 .reviews {
 	overflow: hidden;
+
 	padding: 30px;
 }
 
@@ -174,6 +175,7 @@
 
 	.logo {
 		grid-area: logo;
+
 		margin-bottom: 20px;
 	}
 
@@ -183,6 +185,7 @@
 
 	.tags {
 		grid-area: tags;
+
 		margin-bottom: 20px;
 	}
 
@@ -220,6 +223,7 @@
 
 	.feature {
 		grid-area: feature;
+
 		margin-bottom: 20px;
 	}
 

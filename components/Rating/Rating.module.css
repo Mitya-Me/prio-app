@@ -1,6 +1,3 @@
-.star {
-}
-
 .filled {
 	fill: var(--primary);
 
@@ -22,11 +19,13 @@
 .errorMessage {
 	position: absolute;
 	bottom: -20px;
-	font-size: 12px;
 	left: 2px;
+
 	color: var(--red);
+
+	font-size: 12px;
 }
 
 .error svg {
-	stroke: var(--red); 
+	stroke: var(--red);
 }
