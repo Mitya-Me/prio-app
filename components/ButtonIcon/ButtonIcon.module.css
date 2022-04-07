@@ -34,5 +34,5 @@
 }
 
 .primary:hover svg * {
-	fill: var(--white)
+	fill: var(--white);
 }
