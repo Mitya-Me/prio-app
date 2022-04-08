@@ -24,12 +24,12 @@ a {
 
 :root {
 	--black: #3B434E;
-	--gray-light: #EBEBEB;
+	--gray-light: #6C7077;
 	--gray: #A4A4A4;
 	--gray-dark: #787D85;
 	--white: white;
-	--primary: #2B84B2;
-	--primary-hover: #2B4F91;
+	--primary: #256E93;
+	--primary-hover: #294579;
 	--red: #FC836D;
 	--red-light: #FFF4F4;
 	--green: #1DC47E;
