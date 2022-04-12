@@ -4,7 +4,7 @@ import cn from "classnames";
 import { useEffect, useState, KeyboardEvent, forwardRef, ForwardedRef, useRef } from "react";
 import StarIcon from "./star.svg"
 
-
+//TODO (meta-data***)
 export const Rating = forwardRef(({ error, rating, setRating, isEditable = false, tabIndex, ...props }: RatingProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
 	const [ratingArray, setRatingArray] = useState<JSX.Element[]>(new Array(5).fill(<></>))
 	const ratingArrayRef = useRef<(HTMLSpanElement | null)[]>([])
