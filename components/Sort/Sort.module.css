@@ -21,6 +21,10 @@
 	gap: 40px;
 }
 
+.sortName {
+	display: none;
+}
+
 .sort span {
 	display: grid;
 	grid-template-columns: 20px 1fr;
