@@ -4,7 +4,11 @@ import cn from "classnames";
 import { useEffect, useState, KeyboardEvent, forwardRef, ForwardedRef, useRef } from "react";
 import StarIcon from "./star.svg"
 
+<<<<<<< HEAD
 // test  features for availability (TODO: add aria attr)
+=======
+//TODO (meta-data***)
+>>>>>>> e649b00d9115eb1de15d5b739fb2b1ac3eb7054b
 export const Rating = forwardRef(({ error, rating, setRating, isEditable = false, tabIndex, ...props }: RatingProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
 	const [ratingArray, setRatingArray] = useState<JSX.Element[]>(new Array(5).fill(<></>))
 	const ratingArrayRef = useRef<(HTMLSpanElement | null)[]>([])
